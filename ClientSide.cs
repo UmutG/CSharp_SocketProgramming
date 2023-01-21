@@ -48,7 +48,7 @@ namespace ClientSide
 
                     // Receive the response from the remote device.
                     int bytesRec = clientSocket.Receive(bytes);
-                    Console.WriteLine("Server Echo => {0}",Encoding.ASCII.GetString(bytes, 0, bytesRec));
+                    Console.WriteLine("Server Echo => {0}", Encoding.ASCII.GetString(bytes, 0, bytesRec));
 
                     // Release the socket.
                     clientSocket.Shutdown(SocketShutdown.Both);
